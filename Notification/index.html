@@ -1,0 +1,33 @@
+<html>
+<body>
+<head>
+</head>
+
+<link href="css/ussal-notification.css" rel="stylesheet" />
+
+<div style="text-align:center;margin-top:100px">
+<span class="ussal-btn-success" id="Success">Success</span>
+<span class="ussal-btn-info" id="Info">Info</span>
+<span class="ussal-btn-error" id="Error">Error</span>
+</div>
+
+<div class="toast__container">
+<div class="toast__cell">
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="js/ussal-notification.js"></script>
+<script>
+$("#Success").click(function () {
+notification("Baslik","Buraya Açıklama Gelecek","success");
+});
+$("#Info").click(function () {
+notification("Baslik","Buraya Açıklama Gelecek","info");
+});
+$("#Error").click(function () {
+notification("Baslik","Buraya Açıklama Gelecek","error");
+});
+</script>
+</body>
+</html>
